@@ -1,0 +1,163 @@
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #070A52;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: auto;
+    height: 100vh;
+    display: grid;
+    grid-template: 'nav nav nav nav'
+        'listArea chat chat chat'
+        'listArea chat chat chat'
+        'listArea chat chat chat'
+        'listArea chat chat chat'
+        'listArea chat chat chat'
+        'listArea chat chat chat'
+        'listArea chat chat chat'
+        'listArea chat chat chat'
+        'listArea chat chat chat'
+        'listArea chat chat chat';
+}
+
+.container .nav-bar {
+    height: min-content;
+    border-radius: 12px;
+    border: 5px solid #D21312;
+    color: #F15A59;
+    /* padding-left: 10%; */
+    display: grid;
+    grid-area: nav;
+    place-content: center;
+}
+
+.container .person-list {
+    color: #F15A59;
+    border: 5px solid #D21312;
+    border-radius: 12px;
+    height: 100%;
+    grid-area: listArea;
+    overflow-y: auto;
+}
+
+.container .person-list::-webkit-scrollbar {
+    display: none;
+}
+
+.container .person-list .person {
+    color: #F15A59;
+    font-size: 24px;
+    border: 2px solid #ED2B2A;
+    padding: 10px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.container .message-area {
+    grid-area: chat;
+    border: 5px solid #D21312;
+    border-radius: 12px;
+    color: #F15A59;
+    overflow-y: auto;
+}
+
+.container .message-area .messages {
+    margin-left: 5px;
+    width: 60%;
+    height: 90%;
+    font-size: 24px;
+    color: #070A52;
+    overflow-y: auto;
+}
+
+.container .message-area .messages::-webkit-scrollbar {
+    display: none;
+}
+
+.container .message-area .messages .message {
+    background-color: #F15A59;
+    margin: 5px;
+    height: max-content;
+}
+.container .message-area .messages .message * {
+    color: white;
+    margin: 5px;
+}
+
+
+.container .message-area .messages .message .mess {
+    color: #070A52;
+    word-wrap: break-word;
+}
+
+.container .message-area .messages .message .your {
+    float: right;
+}
+
+
+.container .message-area .message-input {
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+
+.container .message-area .message-input input {
+    border: none;
+    font-size: 18px;
+    width: 80%;
+    padding: 5px 0px 5px 0px;
+    outline: 0;
+}
+
+.container .message-area .message-input button {
+    background-color: #F15A59;
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 19%;
+    padding: 5px 0px 5px 0px;
+    outline: 0;
+}
+
+.container .message-area .message-input button:hover {
+    background-color: #D21312;
+}
+
+.login-container {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.login-container .login {
+    width: 100%;
+
+}
+
+.login-container .login input {
+    border-radius: 7px;
+    border: none;
+    font-size: 18px;
+    outline: 0;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 10px 5px;
+}
+
+.login-container .login button {
+    border: none;
+    font-size: 24px;
+    border-radius: 7px;
+    outline: 0;
+    background-color: #F15A59;
+    color: whitesmoke;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 10px 0px;
+}
+
+.login-container .login button:hover {
+    background-color: #D21312;
+}
